@@ -1,0 +1,34 @@
+{
+  "name": "heshe",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "dev-ios": "react-native run-ios --simulator 'iPhone 8'",
+    "dev-android": "react-native run-android",
+    "build-ios": "react-native bundle --entry-file ./index.ios.js --bundle-output ./ios/bundle/index.ios.jsbundle --platform ios --assets-dest ./ios/bundle --dev false",
+    "build-android": "cd android && ./gradlew assembleRelease"
+  },
+  "dependencies": {
+    "fetch-intercept": "^2.2.3",
+    "mockjs": "^1.0.1-beta3",
+    "react": "16.0.0-alpha.6",
+    "react-native": "0.43.3",
+    "react-native-iphone-x-helper": "^1.0.2",
+    "react-redux": "^5.0.4",
+    "react-timer-mixin": "^0.13.3",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.1",
+    "whatwg-fetch": "^2.0.4"
+  },
+  "devDependencies": {
+    "babel-jest": "19.0.0",
+    "babel-preset-react-native": "1.9.1",
+    "jest": "19.0.2",
+    "react-test-renderer": "16.0.0-alpha.6"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
